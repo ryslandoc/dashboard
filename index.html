@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard v01</title>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Normalize CSS-->
+    <link rel="stylesheet" href="./scss/normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body class="body">
+<!-- Menu -->
+<nav class="menu">
+    <a class="menu__logo" href="#">
+        <div class="menu__logo-container">
+            <img class="menu__icon-logo" width="37" src="./images/logo.svg" alt="logo">
+            <h1>Dashboard <span>v.01</span></h1>
+        </div>
+    </a>
+    <ul class="menu__list">
+        <li class="menu__item">
+            <a class="menu__link" href="#">
+                <div class="menu__icon-block">
+                    <svg class="menu__icon">
+                        <use href="./images/icons.svg#key"></use>
+                    </svg>
+                    Dashboard
+                </div>
+            </a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#">
+                <div class="menu__icon-block">
+                    <svg class="menu__icon">
+                        <use href="./images/icons.svg#model"></use>
+                    </svg>
+                    Product
+                </div>
+                <svg class="menu__icon-arrow">
+                    <use href="./images/icons.svg#arrowMenu"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link active" href="#">
+                <div class="menu__icon-block">
+                    <svg class="menu__icon">
+                        <use href="./images/icons.svg#user"></use>
+                    </svg>
+                    Customers
+                </div>
+                <svg class="menu__icon-arrow">
+                    <use href="./images/icons.svg#arrowMenu"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#">
+                <div class="menu__icon-block">
+                    <svg class="menu__icon">
+                        <use href="./images/icons.svg#wallet"></use>
+                    </svg>
+                    Income
+                </div>
+                <svg class="menu__icon-arrow">
+                    <use href="./images/icons.svg#arrowMenu"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#">
+                <div class="menu__icon-block">
+                    <svg class="menu__icon">
+                        <use href="./images/icons.svg#discount"></use>
+                    </svg>
+                    Promote
+                </div>
+                <svg class="menu__icon-arrow">
+                    <use href="./images/icons.svg#arrowMenu"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#">
+                <div class="menu__icon-block">
+                    <svg class="menu__icon">
+                        <use href="./images/icons.svg#message"></use>
+                    </svg>
+                    Help
+                </div>
+                <svg class="menu__icon-arrow">
+                    <use href="./images/icons.svg#arrowMenu"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+    <div class="menu__account">
+        <div class="menu__account-img"></div>
+        <div class="menu__account-info">
+            <p>Evano</p>
+            <span>Project Manager</span>
+        </div>
+    </div>
+    <div class="menu__burger">
+        <span></span>
+    </div>
+</nav>
+<!-- Main -->
+<main>
+    <!-- Section Customers -->
+    <section class="section">
+        <div class="wrapper-container">
+            <h2 class="output">Hello Evano 👋🏼</h2>
+            <div class="customers">
+                <div class="customers__top">
+                    <div class="customers__top-left">
+                        <h3 class="customers__title">All Customerss</h3>
+                        <span class="customers__subtitle">Active Members</span>
+                    </div>
+                    <div class="customers__top-right">
+                        <form class="customers__form">
+                            <svg class="customers__search-icon">
+                                <use href="./images/icons.svg#search"></use>
+                            </svg>
+                            <input class="customers__search" type="search" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="customers__main">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Company</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td data-label="Customer Name">Jane Cooper</td>
+                            <td data-label="Company">Microsoft</td>
+                            <td data-label="Phone Number">(225) 555-0118</td>
+                            <td data-label="Email">jane@microsoft.com</td>
+                            <td data-label="Country">United States</td>
+                            <td data-label="Status">
+                                <div class="table__inactive">Inactive</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Customer Name">Floyd Miles</td>
+                            <td data-label="Company">Yahoo</td>
+                            <td data-label="Phone Number">(629) 555-0129</td>
+                            <td data-label="Email">kathryn@microsoft.com</td>
+                            <td data-label="Country">Curaçao</td>
+                            <td data-label="Status">
+                                <div class="table__active">Active</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td data-label="Customer Name">Jane Cooper</td>
+                            <td data-label="Company">Microsoft</td>
+                            <td data-label="Phone Number">(225) 555-0118</td>
+                            <td data-label="Email">jane@microsoft.com</td>
+                            <td data-label="Country">United States</td>
+                            <td data-label="Status">
+                                <div class="table__inactive">Inactive</div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <p>Showing data 1 to 8 of 256K entries</p>
+                        <ul class="pagination__list">
+                            <li class="pagination__item pagination__prev">
+                                <svg class="pagination__icon">
+                                    <use href="./images/icons.svg#arrowTable"></use>
+                                </svg>
+                            </li>
+                            <li class="pagination__item active">1</li>
+                            <li class="pagination__item">2</li>
+                            <li class="pagination__item">3</li>
+                            <li class="pagination__item">4</li>
+                            <li class="pagination__item-ellipsis">...</li>
+                            <li class="pagination__item">40</li>
+                            <li class="pagination__item pagination__next">
+                                <svg class="pagination__icon">
+                                    <use href="./images/icons.svg#arrowTable"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- JS -->
+<script src="./js/main.js"></script>
+</body>
+</html>

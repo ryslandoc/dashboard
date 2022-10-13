@@ -1,0 +1,42 @@
+@import "vars";
+
+body {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: $black;
+  background-color: $body-color;
+
+  &.js-active {
+    overflow: hidden;
+  }
+}
+
+.wrapper-container {
+  max-width: 100%;
+  width: 67.2%;
+  margin-left: calc(306px + 4.931vw);
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.output {
+  font-size: 24px;
+  line-height: 36px;
+  color: $black;
+  padding-bottom: 51px;
+}
+
+.section {
+  padding-top: 41px;
+
+  @media (max-width: 1024px) {
+    padding: 40px 15px 15px;
+  }
+}
