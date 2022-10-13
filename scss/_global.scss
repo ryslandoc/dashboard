@@ -30,11 +30,11 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: $black;
-  padding-bottom: 51px;
+  padding-bottom: 3.5416vh;;
 }
 
 .section {
-  padding: 40px;
+  padding-top: 41px;
 
   @media (max-width: 1024px) {
     padding: 40px 15px 15px;
